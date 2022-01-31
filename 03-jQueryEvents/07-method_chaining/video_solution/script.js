@@ -64,6 +64,11 @@ $(document).ready(function() {
         $('#button_effects6').fadeTo(1000, 1);
     });
 
+    // Normally we would do this:
+    $("myButton").removeClass("blueBox");
+    $("myButton").addClass("border");
+
+    // But with Method Chaining you can write code like below:
     $("#myButton").removeClass("blueBox").addClass("border");
     $("p").css("color", "blue").slideUp(2000).slideDown(2000);
     $("a").attr("href", "http://www.example.com");
